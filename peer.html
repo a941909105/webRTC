@@ -1,0 +1,33 @@
+<!--
+ * @Author: mmmmmmmm
+ * @Date: 2023-01-11 20:19:06
+ * @Description: 文件描述
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerToPeer</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="./js/adapter.js"></script>
+</head>
+
+<body>
+    <div style="display:flex;flex-wrap: nowrap;border: 1px solid red;position: absolute;top: 0;height: 100vh;">
+        <video id="remote" autoplay style="width:100%;height:100%;flex-grow:1;"></video>
+    </div>
+    <video id="local" muted autoplay
+        style="width:180px;height:180px;position: absolute;border: 1px solid red;bottom:0;right: 0;"></video>
+    <script src="./js/socketPeerToPeer.js"></script>
+</body>
+
+</html>
